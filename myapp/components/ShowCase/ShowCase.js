@@ -1,4 +1,7 @@
+'use client'
+import React from 'react';
 import Link from 'next/link';
+import ImageSlider from './ImageSlider';
 
 const ShowCase = () => {
     const images = [
@@ -27,7 +30,7 @@ const ShowCase = () => {
             See More
           </Link>
         </div>
-        slider
+        <ImageSlider images={images} />
     </div>
     </section>
   )
